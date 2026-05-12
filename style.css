@@ -1,9 +1,165 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body{
-    height: 100%;
-    width: 100%;
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #02080d;
+  color: white;
+  font-family: inter;
+}
+
+nav {
+  width: 100%;
+  height: 120px;
+  padding: 40px 60px;
+}
+nav div a:hover {
+  padding: 10px 0;
+  border-bottom: 1px solid #53eafd;
+}
+nav button {
+  padding: 10px 20px;
+  display: flex;
+  border-radius: 30px;
+  border: 1px solid #53eafd;
+  gap: 16px;
+}
+nav button h6 {
+  font-weight: 500;
+}
+
+main #intro {
+  background-image: url("./Assets/A3-main.png");
+  height: calc(100% - 120px);
+  width: 100%;
+  background-position: 60% -10%;
+  background-size: 35% auto;
+  background-repeat: no-repeat;
+}
+main #intro #section-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+  margin-bottom: 40px;
+}
+main #intro #section-1 #top-left {
+  width: 60%;
+}
+main #intro #section-1 #top-left h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+main #intro #section-1 #top-left h1 {
+  font-size: 60px;
+  line-height: 1;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+main #intro #section-1 #top-left h1 span {
+  color: #13bea4;
+}
+main #intro #section-1 #top-left h2 {
+  color: #c9c9c9;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+}
+main #intro #section-1 #top-left p {
+  color: grey;
+  font-size: 16px;
+  padding: 25px 0;
+}
+main #intro #section-1 #top-left #btn {
+  display: flex;
+  align-content: center;
+  gap: 30px;
+}
+main #intro #section-1 #top-left #btn button {
+  border: 1px solid #53eafd;
+  background: linear-gradient(to right, transparent 30%, #08b095);
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+main #intro #section-1 #top-left #btn div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #intro #section-1 #top-left #btn div i {
+  border: 1px solid #08b095;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+}
+main #intro #section-1 #top-left #btn div h6 {
+  font-weight: 300;
+  font-size: 14px;
+}
+main #intro #section-1 #top-right {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+main #intro #section-1 #top-right img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #intro #section-2 {
+  width: 95%;
+  justify-self: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 15px;
+  background-color: rgba(12, 21, 25, 0.5960784314);
+  backdrop-filter: blur(20px);
+}
+main #intro #section-2 img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main #intro #section-2 #shuriken-1 {
+  left: -1%;
+  top: -30%;
+  height: 225px;
+}
+main #intro #section-2 #shuriken-2 {
+  right: -1.5%;
+  top: -53%;
+  height: 300px;
+}
+main #intro #section-2 #wrapper-1 {
+  height: 100%;
+  padding: 40px 40px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+main #intro #section-2 #wrapper-1 div {
+  padding: 0 40px;
+  border-right: 1px solid rgb(145, 145, 145);
+}
+main #intro #section-2 #wrapper-1 div h4 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+main #intro #section-2 #wrapper-1 div:last-child {
+  border-right: none;
 }
