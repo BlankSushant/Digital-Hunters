@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -28,18 +29,24 @@ nav button {
   display: flex;
   border-radius: 30px;
   border: 1px solid #53eafd;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   gap: 16px;
 }
 nav button h6 {
   font-weight: 500;
+}
+nav button:hover {
+  background-color: #53eafd;
+  color: black;
 }
 
 main #intro {
   background-image: url("./Assets/A3-main.png");
   height: calc(100% - 120px);
   width: 100%;
-  background-position: 60% -10%;
-  background-size: 35% auto;
+  background-position: 62% -10%;
+  background-size: 38% auto;
   background-repeat: no-repeat;
 }
 main #intro #section-1 {
@@ -56,11 +63,12 @@ main #intro #section-1 #top-left h3 {
   margin-bottom: 5px;
 }
 main #intro #section-1 #top-left h1 {
-  font-size: 60px;
-  line-height: 1;
+  font-size: 90px;
+  line-height: 0.9;
   font-weight: bolder;
   text-transform: uppercase;
   margin-bottom: 14px;
+  font-family: Orbitron;
 }
 main #intro #section-1 #top-left h1 span {
   color: #13bea4;
@@ -73,7 +81,7 @@ main #intro #section-1 #top-left h2 {
 main #intro #section-1 #top-left p {
   color: grey;
   font-size: 16px;
-  padding: 25px 0;
+  padding: 15px 0 25px;
 }
 main #intro #section-1 #top-left #btn-1 {
   display: flex;
@@ -89,6 +97,7 @@ main #intro #section-1 #top-left #btn-1 button {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  cursor: pointer;
 }
 main #intro #section-1 #top-left #btn-1 div {
   display: flex;
@@ -164,7 +173,7 @@ main #intro #section-2 #wrapper-1 div:last-child {
   border-right: none;
 }
 main #games {
-  height: 500px;
+  max-height: 800px;
   width: 100%;
   padding: 40px 60px;
   display: grid;
@@ -183,7 +192,7 @@ main #games h5 {
   justify-self: center;
   align-self: center;
   font-size: 28px;
-  color: green;
+  color: #35d7c7;
 }
 main #games h5 span {
   color: white;
@@ -195,8 +204,8 @@ main #games #btn-2 {
   align-content: center;
 }
 main #games #btn-2 i {
-  box-shadow: inset 1px 1px 10px 1px green;
-  border: 1px solid green;
+  box-shadow: inset 1px 1px 10px 1px #35d7c7;
+  border: 1px solid #35d7c7;
   padding: 15px;
   border-radius: 50%;
   margin-left: 20px;
@@ -206,7 +215,7 @@ main #games .game {
   grid-row: 2/3;
   display: flex;
   flex-direction: column;
-  border: 2px solid green;
+  border: 2px solid #35d7c7;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -258,6 +267,252 @@ main #games .game .game-description button {
   bottom: 20%;
   right: 10%;
   border-radius: 50%;
-  border: 1px solid green;
+  border: 1px solid #35d7c7;
   color: cyan;
+}
+main #features {
+  padding: 40px 60px;
+}
+main #features h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #f3f0ed;
+  margin-bottom: 35px;
+  letter-spacing: 1px;
+}
+main #features h2 span {
+  color: #35d7c7;
+}
+main #features > div {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+main #features > div .feature-line {
+  position: absolute;
+  top: 49px;
+  width: 3.8%;
+  height: 1px;
+  border: 1px dashed #35d7c7;
+  z-index: 1;
+}
+main #features > div .line-1 {
+  left: 18.2%;
+}
+main #features > div .line-2 {
+  width: 3.7%;
+  left: 39%;
+}
+main #features > div .line-3 {
+  left: 59.25%;
+}
+main #features > div .line-4 {
+  left: 79.7%;
+  width: 3.7%;
+}
+main #features > div .feature {
+  position: relative;
+  flex: 1;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.231);
+  background-color: black;
+  border-radius: 22px;
+  display: flex;
+  gap: 10px;
+}
+main #features > div .feature .feature-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(53, 215, 199, 0.28);
+}
+main #features > div .feature .feature-icon i {
+  font-size: 32px;
+  color: #35d7c7;
+}
+main #features > div .feature .feature-description {
+  display: flex;
+  flex-direction: column;
+}
+main #features > div .feature .feature-description h3 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #35d7c7;
+}
+main #features > div .feature .feature-description h4 {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #f2f0ed;
+  text-transform: uppercase;
+}
+main #features > div .feature .feature-description p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+footer {
+  padding: 0 60px 15px;
+}
+footer #contact-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 48px 54px;
+  border: 1px solid rgba(53, 215, 199, 0.5960784314);
+  border-radius: 25px;
+  background-image: url("./Assets/Contact-div.png");
+  background-size: cover;
+  background-position: -200px 0;
+}
+footer #contact-us #left-contact {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+footer #contact-us #left-contact h2 {
+  font-size: 30px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #f3f0ed;
+}
+footer #contact-us #left-contact h2 span {
+  color: #35d7c7;
+}
+footer #contact-us #left-contact h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.72);
+}
+footer #contact-us #left-contact button {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 40px;
+  border-radius: 16px;
+  border: 1px solid rgba(53, 215, 199, 0.65);
+  background: linear-gradient(to right, transparent 42%, #08b094);
+  color: #fff;
+  cursor: pointer;
+}
+footer #contact-us #left-contact button p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+footer #contact-us #left-contact button i {
+  font-size: 22px;
+  color: #fff;
+}
+footer #contact-us #right-contact {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-left: 40px;
+}
+footer #contact-us #right-contact #social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+footer #contact-us #right-contact #social-media a {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer #contact-us #right-contact #social-media a img {
+  width: 140px;
+  height: auto;
+  display: block;
+}
+footer #contact-us #right-contact #social-media h4 {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgb(147, 144, 144);
+}
+footer #contact-us #right-contact #social-media #social-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+footer #contact-us #right-contact #social-media #social-links a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(53, 215, 199, 0.2);
+  background-color: rgba(0, 0, 0, 0.116);
+}
+footer #contact-us #right-contact #social-media #social-links a i {
+  font-size: 18px;
+  color: #d8d8d8;
+}
+footer #contact-us #right-contact #social-media #social-links a:hover i {
+  color: #35d7c7;
+}
+footer #contact-us #right-contact #contact-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-left: 50px;
+  border-left: 1px solid rgba(255, 255, 255, 0.283);
+}
+footer #contact-us #right-contact #contact-info h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #f0f0f0;
+}
+footer #contact-us #right-contact #contact-info h5 {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.72);
+}
+footer #contact-us #right-contact #contact-info h5 i {
+  font-size: 20px;
+  color: #748687;
+}
+footer #contact-us #right-contact #contact-info h5 a {
+  color: inherit;
+  text-decoration: none;
+}
+footer #contact-us #right-contact #contact-info h5:last-child i {
+  color: #35d7c7;
+}
+footer #copyrights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 6px 0;
+  color: rgba(255, 255, 255, 0.45);
+}
+footer #copyrights h6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+footer #copyrights #copyright-right {
+  display: flex;
+  gap: 34px;
 }
