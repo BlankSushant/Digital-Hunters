@@ -209,6 +209,7 @@ main #games #btn-2 i {
   padding: 15px;
   border-radius: 50%;
   margin-left: 20px;
+  cursor: pointer;
 }
 main #games .game {
   height: 450px;
@@ -223,7 +224,7 @@ main #games .game .game-image {
   height: 290px;
 }
 main #games .game #game-image-1 {
-  background-image: url("./Assets/Sled_Hockey.png");
+  background-image: url("./Assets/sled_hockey.png");
   background-size: cover;
   background-position: 0 0;
 }
@@ -269,6 +270,12 @@ main #games .game .game-description button {
   border-radius: 50%;
   border: 1px solid #35d7c7;
   color: cyan;
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: pointer;
+}
+main #games .game .game-description button:hover {
+  background-color: #35d7c7;
+  color: black;
 }
 main #features {
   padding: 40px 60px;
