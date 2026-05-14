@@ -223,7 +223,7 @@ main #games .game .game-image {
   height: 290px;
 }
 main #games .game #game-image-1 {
-  background-image: url("./Assets/sled_hockey.png");
+  background-image: url("./Assets/Sled_Hockey.png");
   background-size: cover;
   background-position: 0 0;
 }
