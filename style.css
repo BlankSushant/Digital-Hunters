@@ -75,27 +75,27 @@ main #intro #section-1 #top-left p {
   font-size: 16px;
   padding: 25px 0;
 }
-main #intro #section-1 #top-left #btn {
+main #intro #section-1 #top-left #btn-1 {
   display: flex;
   align-content: center;
   gap: 30px;
 }
-main #intro #section-1 #top-left #btn button {
+main #intro #section-1 #top-left #btn-1 button {
   border: 1px solid #53eafd;
-  background: linear-gradient(to right, transparent 30%, #08b095);
-  padding: 10px 15px;
+  background: linear-gradient(to right, transparent 30%, #08b094);
+  padding: 15px 25px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
 }
-main #intro #section-1 #top-left #btn div {
+main #intro #section-1 #top-left #btn-1 div {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-main #intro #section-1 #top-left #btn div i {
+main #intro #section-1 #top-left #btn-1 div i {
   border: 1px solid #08b095;
   border-radius: 50%;
   height: 40px;
@@ -105,7 +105,7 @@ main #intro #section-1 #top-left #btn div i {
   align-items: center;
   margin-right: 16px;
 }
-main #intro #section-1 #top-left #btn div h6 {
+main #intro #section-1 #top-left #btn-1 div h6 {
   font-weight: 300;
   font-size: 14px;
 }
@@ -162,4 +162,102 @@ main #intro #section-2 #wrapper-1 div h4 {
 }
 main #intro #section-2 #wrapper-1 div:last-child {
   border-right: none;
+}
+main #games {
+  height: 500px;
+  width: 100%;
+  padding: 40px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20% 80%;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 20px;
+}
+main #games h5 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+  font-size: 28px;
+  color: green;
+}
+main #games h5 span {
+  color: white;
+}
+main #games #btn-2 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  justify-self: flex-end;
+  align-content: center;
+}
+main #games #btn-2 i {
+  box-shadow: inset 1px 1px 10px 1px green;
+  border: 1px solid green;
+  padding: 15px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+main #games .game {
+  height: 450px;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid green;
+  border-radius: 20px;
+  overflow: hidden;
+}
+main #games .game .game-image {
+  height: 290px;
+}
+main #games .game #game-image-1 {
+  background-image: url("./Assets/sled_hockey.png");
+  background-size: cover;
+  background-position: 0 0;
+}
+main #games .game #game-image-2 {
+  background-image: url("./Assets/Project_Genesis.png");
+  background-size: cover;
+  background-position: 0 0;
+}
+main #games .game #game-image-3 {
+  background-image: url("./Assets/Mechanic_Park.png");
+  background-size: cover;
+  background-position: 0 0;
+}
+main #games .game .game-description {
+  padding: 20px 30px;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+}
+main #games .game .game-description > div {
+  width: 90%;
+}
+main #games .game .game-description > div p {
+  font-weight: 200;
+  font-size: 15px;
+  color: #dadada;
+  margin-bottom: 10px;
+}
+main #games .game .game-description > div .platforms {
+  display: flex;
+  gap: 20px;
+  color: rgb(216, 212, 212);
+}
+main #games .game .game-description > div .platforms i {
+  font-size: 25px;
+}
+main #games .game .game-description button {
+  position: absolute;
+  padding: 10px 15px;
+  bottom: 20%;
+  right: 10%;
+  border-radius: 50%;
+  border: 1px solid green;
+  color: cyan;
 }
